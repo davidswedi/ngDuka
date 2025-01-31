@@ -7,10 +7,10 @@ export const serverRoutes: ServerRoute[] = [
   },
   {
     path: 'products/:category',
-    renderMode: RenderMode.Prerender,
+    renderMode: RenderMode.Client,
   },
   {
     path: 'product/:id',
-    renderMode: RenderMode.Prerender,
+    renderMode: RenderMode.Client,
   },
 ];
