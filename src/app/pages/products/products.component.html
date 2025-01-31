@@ -1,0 +1,12 @@
+<main class="max-width">
+    <app-product-list
+      [sectionTitle]="category()"
+      [query]="category()"
+    ></app-product-list>
+
+    <br> 
+    <app-product-list
+    sectionTitle="Vous aimeriez aussi ceci peut-être"
+    [query]="'allProducts'"
+  ></app-product-list>
+  </main>

@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ToolbarComponent } from './pages/shared/toolbar.component';
+import { FooterComponent } from './pages/shared/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ToolbarComponent, FooterComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <app-toolbar></app-toolbar>
 
     <router-outlet />
+    <app-footer></app-footer>
   `,
   styles: [],
 })
